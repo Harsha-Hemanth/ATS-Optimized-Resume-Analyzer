@@ -11,8 +11,6 @@ def introduction():
     with col1:
         st.title("CareerCraft")
         st.header("Navigate the Job Market with Confidence!")
-
-    with col2:
         st.markdown("""
         <p style="text-align: justify;">
         Introducing CareerCraft, an ATS-Optimized Resume Analyzer - your ultimate solution for optimizing job applications and accelerating career growth. 
@@ -22,10 +20,31 @@ def introduction():
         </p>
         """, unsafe_allow_html=True)
 
-        st.image('https://cdn.dribbble.com/userupload/12500996/file/original-b458fe398a6d7f4e9999ce66ec856ff9.gif', use_column_width=True)
+    with col2:
+        st.image('images/introduction_image.gif', use_column_width=True)
     st.write("")  # Adding vertical space
 
+# Offerings Section
+def offerings():
+    st.write("")  # Adding vertical space
+    col1, col2 = st.columns([3, 2])
+
+    with col1:
+        st.image('images/offerings_image.png', use_column_width=True)
+
+    with col2:
+        st.header("Wide Range of Offerings")
+        st.write("""
+        - **ATS-Optimized Resume Analysis**
+        - **Resume Optimization**
+        - **Skill Enhancement**
+        - **Career Progression Guidance**
+        - **Interview Preparation**
+        - **Job Application Strategy**
+        """)
+    st.write("")  # Adding vertical space
 
 # Render the sections
 introduction()
+offerings()
 
