@@ -1,10 +1,8 @@
 from dotenv import load_dotenv
 import streamlit as st
-from streamlit_extras import add_vertical_space as avs
 import google.generativeai as genai
 import os
 import PyPDF2
-from PIL import Image
 
 load_dotenv()
 
