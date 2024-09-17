@@ -50,11 +50,15 @@ Make sure you have the following installed:
     
 2. Open your browser and go to http://localhost:8501.
 
+   ![sample image](./output%20images/introduction.png)
+
 3. Upload your resume in PDF format and let the analyzer do its magic. It will display the following information:
 
 - ATS score
 - Keyword analysis
 - Suggestions for improvement
+
+  ![sample image](./output%20images/output1.png)
   
 ## 🧰 Technologies Used
 - Streamlit: Web application framework
