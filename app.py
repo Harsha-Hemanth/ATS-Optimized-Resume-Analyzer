@@ -1,6 +1,7 @@
 from dotenv import load_dotenv
 import streamlit as st
 import google.generativeai as genai
+from streamlit_extras import add_vertical_space as avs
 import os
 import PyPDF2
 
@@ -48,9 +49,10 @@ While generating the response put some space to separate all the three sections.
 # Page configuration
 st.set_page_config(page_title="Resume ATS Tracker", layout="wide")
 
+avs.add_vertical_space(6)
+
 # Introduction Section
 def introduction():
-    st.write("")  # Adding vertical space
     col1, col2 = st.columns([3, 2])
 
     with col1:
@@ -67,11 +69,10 @@ def introduction():
 
     with col2:
         st.image('images/introduction_image.gif', use_column_width=True)
-    st.write("")  # Adding vertical space
+    avs.add_vertical_space(10)
 
 # Offerings Section
 def offerings():
-    st.write("")  # Adding vertical space
     col1, col2 = st.columns([3, 2])
 
     with col1:
@@ -87,7 +88,7 @@ def offerings():
         - **Interview Preparation**
         - **Job Application Strategy**
         """)
-    st.write("")  # Adding vertical space
+    avs.add_vertical_space(10)
 
 st.markdown("""
     <style>
@@ -116,7 +117,7 @@ def resume_ats_tracking():
 
     with col2: 
         st.image("./images/application_image.png", use_column_width=True) 
-        st.write("")
+    avs.add_vertical_space(10)
 
 # FAQ Section
 def faq():
