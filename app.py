@@ -68,7 +68,7 @@ def introduction():
         """, unsafe_allow_html=True)
 
     with col2:
-        st.image('images/introduction_image.gif', use_column_width=True)
+        st.image('images/image1.webp', use_container_width=True)
     avs.add_vertical_space(10)
 
 # Offerings Section
@@ -76,7 +76,7 @@ def offerings():
     col1, col2 = st.columns([3, 2])
 
     with col1:
-        st.image('images/offerings_image.png', use_column_width=True)
+        st.image('images/image2.webp', use_container_width=True)
 
     with col2:
         st.header("Wide Range of Offerings")
@@ -89,17 +89,6 @@ def offerings():
         - **Job Application Strategy**
         """)
     avs.add_vertical_space(10)
-
-st.markdown("""
-    <style>
-        .stTextArea textarea {
-            background-color: #228a27;
-        }
-        [data-testid="stFileUploaderDropzone"] {
-            background-color: #228a27;
-        }
-    </style>
-""", unsafe_allow_html=True)
 
 # Resume ATS Tracking Application Section
 def resume_ats_tracking():
@@ -116,7 +105,7 @@ def resume_ats_tracking():
                 st.subheader(response) 
 
     with col2: 
-        st.image("./images/application_image.png", use_column_width=True) 
+        st.image("./images/image3.webp", use_comtainer_width=True) 
     avs.add_vertical_space(10)
 
 # FAQ Section
@@ -134,7 +123,7 @@ def faq():
         st.write("""Answer: Absolutely! CareerCraft caters to job seekers at all career stages, offering tailored insights and guidance to enhance their resumes and advance their careers.""") 
     
     with col1: 
-        st.image("./images/faq_image.png", use_column_width=True)
+        st.image("./images/image4.webp", use_container_width=True)
 
 # Render the sections
 introduction()
