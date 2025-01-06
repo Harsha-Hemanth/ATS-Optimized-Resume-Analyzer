@@ -130,7 +130,7 @@ def faq():
         st.write("Question: Can CareerCraft suggest improvements for my resume?") 
         st.write("""Answer: Yes, CareerCraft provides personalized recommendations to optimize your resume for specific job openings, including suggestions for missing keywords and alignment with desired job roles.""") 
         st.write("") 
-        st. write("Question: Is CareerCraft suitable for both entry-level and experienced professionals?") 
+        st.write("Question: Is CareerCraft suitable for both entry-level and experienced professionals?") 
         st.write("""Answer: Absolutely! CareerCraft caters to job seekers at all career stages, offering tailored insights and guidance to enhance their resumes and advance their careers.""") 
     
     with col1: 
