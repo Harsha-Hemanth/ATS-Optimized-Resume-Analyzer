@@ -105,7 +105,7 @@ def resume_ats_tracking():
                 st.subheader(response) 
 
     with col2: 
-        st.image("./images/image3.webp", use_comtainer_width=True) 
+        st.image("./images/image3.webp", use_container_width=True) 
     avs.add_vertical_space(10)
 
 # FAQ Section
